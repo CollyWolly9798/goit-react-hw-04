@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import searchImages from '../../Api.js';
+import searchImages from '../../fetch.js';
 import SearchBar from '../SearchBar/SearchBar';
 import ImageGallery from '../ImageGallery/ImageGallery.jsx';
 import Loader from '../Loader/Loader.jsx';
