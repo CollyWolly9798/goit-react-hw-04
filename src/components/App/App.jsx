@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
+import searchImages from '../../Api.js';
 import SearchBar from '../SearchBar/SearchBar';
 import ImageGallery from '../ImageGallery/ImageGallery.jsx';
 import Loader from '../Loader/Loader.jsx';
 import ErrorMessage from '../ErrorMessage/ErrorMessage.jsx';
 import LoadMoreButton from '../LoadMoreBtn/LoadMoreBtn.jsx';
 import ImageModal from '../ImageModal/ImageModal';
-import searchImages from '../../Api.js';
 
 export default function App() {
   const [response, setResponse] = useState([]);
