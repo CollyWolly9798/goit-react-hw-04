@@ -7,7 +7,7 @@ export default function ImageGallery({ result, openModal }) {
       {result.map((image, index) => {
         return (
           <li className={css.card} key={image.id}>
-            <ImageCard src={image.urls.raw} alt={image.description} onClick={() => openModal(index)} />
+            <ImageCard src={image.urls.small} alt={image.description} onClick={() => openModal(index)} />
           </li>
         );
       })}
